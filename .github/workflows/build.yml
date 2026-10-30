@@ -1,0 +1,14 @@
+# What the squads use today (copy-pasted into each repo). Rough on purpose.
+name: build
+on:
+  push:
+    paths: ["option-b-reusable-workflow/**"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pytest
+      - run: cd option-b-reusable-workflow/service && python -m pytest -q
+      - run: docker build -t greeter option-b-reusable-workflow/service
+      # TODO someone: push the image somewhere? deploy? canary??

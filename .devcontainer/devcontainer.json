@@ -1,5 +1,5 @@
 {
-  "name": "SECE Round 3 pairing workspace",
+  "name": "SECE Round 2 pairing workspace",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:4.1.3": {},

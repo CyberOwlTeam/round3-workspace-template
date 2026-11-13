@@ -11,7 +11,7 @@ check() { local name="$1"; shift
   line="$(printf '%s\n' "$out" | grep -v -e '^[[:space:]]*$' -e '^---$' -e 'level=info' -e '^INFO\[' | head -n1)"
   if [ "$rc" -eq 0 ]; then printf "  ok    %-11s %s\n" "$name" "$line"
   else printf "  FAIL  %-11s %s\n" "$name" "${line:-exit $rc}"; fail=1; fi; }
-echo "Round 3 workspace check"
+echo "Round 2 workspace check"
 check helm       helm version --short
 check kubectl    kubectl version --client
 check kind       kind version

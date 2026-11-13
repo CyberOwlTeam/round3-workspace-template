@@ -1,0 +1,13 @@
+team: payments
+namespace: payments-dev
+members:
+  - group: sece-payments-engineers
+access:
+  - resources: [deployments, pods, services, configmaps]
+    verbs: [get, list, watch, create, update, patch]
+  - resources: [pods/log]
+    verbs: [get, list]
+quota:
+  cpu: "4"
+  memory: 8Gi
+  pods: 20

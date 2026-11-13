@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+out/
+dist/
+option-c-namespace-provisioner/go/provisioner
+option-c-namespace-provisioner/go/r3-provisioner

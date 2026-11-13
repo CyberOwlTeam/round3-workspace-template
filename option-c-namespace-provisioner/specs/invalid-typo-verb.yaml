@@ -1,0 +1,11 @@
+team: onboarding
+namespace: onboarding-dev
+members:
+  - group: sece-onboarding-engineers
+access:
+  - resources: [deployments, pods]
+    verbs: [get, lsit, watch]
+quota:
+  cpu: "0"
+  memory: 1Mi
+  pods: 1

@@ -1,0 +1,20 @@
+# Caller stub for option B. Wire this up to your reusable workflow.
+name: release-greeter
+on:
+  push:
+    tags: ["b-v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  # release:
+  #   uses: ./.github/workflows/<your-reusable-workflow>.yml
+  #   with:
+  #     # your inputs here (e.g. service path, image name, canary)
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Caller not wired up yet; replace this job with the release job above."

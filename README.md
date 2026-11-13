@@ -1,4 +1,4 @@
-# Round 3 pairing workspace
+# Round 2 pairing workspace
 
 Welcome. This workspace has everything installed, so you don't need anything on your own machine. This repo is your own copy, in your account; it runs on GitHub's free monthly Codespaces allowance, so it costs you nothing.
 
